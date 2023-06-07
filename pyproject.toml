@@ -2,12 +2,16 @@
 name = "debiasyn"
 version = "0.1.0"
 description = "The DebiaSyn Toolbox: Pushing the Boundaries of Information-Theoretic Estimators for Neuroimaging Data"
-authors = [{ name = "Juan Carlos Farah", email = "juancarlos.farah@epfl.ch" }]
-license = {text = "AGPL-3.0-or-later"}
+authors = [ "Juan Carlos Farah <juancarlos.farah@epfl.ch>" ]
+license = "GPL-3.0-or-later"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.12"
+pandas = "^2.0.2"
+scikit-learn = "^1.2.2"
+statsmodels = "^0.14.0"
+dit = "^1.5"
 
 [build-system]
 requires = ["poetry-core"]
